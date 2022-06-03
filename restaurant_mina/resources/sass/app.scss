@@ -1,0 +1,22 @@
+// Bootstrap
+// @import '~bootstrap/scss/bootstrap';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+@import 'abstracts/global';
+// layout
+@import 'layout/navbar';
+@import 'layout/footer';
+// components 
+@import 'components/slick';
+@import 'components/banner-animation';
+@import 'components/banner';
+@import 'components/button';
+@import 'components/form';
+@import 'components/testimonial';
+@import 'components/special-menu';
+// pages 
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/contact';
+@import 'pages/checkout';
+@import 'pages/cart';

@@ -1,0 +1,90 @@
+.welcome-image {
+    margin-bottom: 30px;
+    border-radius: 4px;
+    overflow: hidden;
+    max-width: 200px;
+    @include breakpoint (xs) {
+        max-width: 100%;
+    }
+}
+
+// reservation 
+.mina_menu_tabs {
+    .slick-list {
+        padding: 0 15px;
+    }
+    .mina_menu_item {
+        // background: rgba($white, 0.5);
+        // padding: 30px;
+        // box-shadow: 0 0 10px rgba($black, 0.1);
+        // @include border-radius(2px);
+        @include breakpoint (sm) {
+            // padding-right: 50px;
+        }
+        margin-bottom: 50px;
+        .item_title_price {
+            h2 {
+                padding-left: 40px;
+                @include breakpoint (sm) {
+                    display: flex;
+                    padding-right: 125px;
+                }
+                @include breakpoint (xs) {
+                    display: block;
+                }
+                em {
+                    font-style: normal;
+                    position: absolute;
+                    left: 0;
+                }
+                span {
+                    &.price {
+                        @include breakpoint (sm) {
+                            position: absolute;
+                            right: 0;
+                        }
+                        @include breakpoint (xs) {
+                            margin-left: 0 !important;
+                            display: block;
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#_mina_short_intro {
+    ._short_desc {
+        @include breakpoint (sm1) {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+section#_mina_grand_menu.mina_grand_menu_wrapper {
+    margin-bottom: -80px;
+    padding-bottom: 120px;
+}
+
+// section#_mina_grand_menu.menu-page {
+//     margin-bottom: -80px;
+//     padding-bottom: 160px;
+// }
+section#reservation {
+    /* text-align: center; */
+    background: #f5f5f5;
+    padding: 50px 0;
+    /* background: #f5f5f5;
+    padding: 50px 0; */
+}
+
+
+.flatpickr-calendar{
+      z-index: 10000000 !important; 
+    }
+
+.tab-content {
+    margin-top: 40px;
+}

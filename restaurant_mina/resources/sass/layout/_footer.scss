@@ -1,0 +1,65 @@
+.ft-address-block {
+    margin-bottom: 40px;
+    @include breakpoint (xs) {
+        margin-bottom: 0;
+    }
+}
+
+.swal-modal .swal-icon--warning {
+    border-color: #F13B3B;
+    animation: inherit;
+}
+.swal-modal .swal-footer .swal-button--cancel {
+    border: 1px solid #666;
+    color: #666;
+    background: transparent;
+    border-radius: 2px;
+}
+.swal-modal .swal-footer .swal-button--catch {
+    background: #F13B3B;
+    border-radius: 2px;
+}
+.swal-modal .swal-icon--warning__body {
+    background-color: #F13B3B;
+    height: 25px;
+}
+.swal-modal .swal-icon--warning__dot {
+    margin-left: -3px;
+    background-color: #F13B3B;
+}
+#mina_footer {
+    .sub-branches {
+        h3 {
+            margin-bottom: 20px;
+        }
+        .ft-address-block {
+            h4 {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+.ft-icons {
+    @include breakpoint (xs) {}
+    margin-bottom: 30px;
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style: none;
+            a {
+                transition: all 0.5s;
+                &:not(:hover) {
+                    color: $white !important;
+                }
+            }
+        }
+    }
+}
+
+.scrollToTop {
+    i {
+        line-height: 30px;
+    }
+}

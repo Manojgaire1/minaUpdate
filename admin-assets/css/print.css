@@ -1,0 +1,125 @@
+@media print {
+    body * {
+        visibility: hidden !important;
+    }
+
+    #view-all-form,
+    #view-all-form * {
+        visibility: visible !important;
+        line-height: 1.19;
+    }
+
+    body {
+        line-height: 1.4;
+        height: 100%;
+        overflow: initial;
+    }
+
+    html {
+        overflow: initial;
+    }
+
+    .row {
+        display: block;
+
+        overflow: hidden;
+    }
+
+    .row:after {
+        display: table;
+        content: "";
+        clear: both;
+    }
+
+    .col-lg-4 {
+        width: 33.333333%;
+        float: left;
+    }
+
+    div.p-b-5 span{
+        display: none;
+    }
+
+    [class*=col] {
+        float: left;
+    }
+
+    .Customer-amount.-detail-tbl.m-b-20.p-b-10 {
+        margin-bottom: 100px;
+    }
+
+    .pcoded .pcoded-navbar {
+        display: none;
+    }
+
+    .modal {
+        position: absolute;
+        left: 0;
+        top: -120px;
+        margin: 0;
+        padding: 0;
+        overflow: visible !important;
+        height: 100%;
+        width: 100%;
+    }
+
+    body.modal-open {
+        visibility: hidden;
+    }
+
+    body.modal-open .modal .modal-header,
+    body.modal-open .modal .modal-body {
+        visibility: visible;
+        /* make visible modal body and header */
+    }
+
+    #view-all-form table.view-driverdetail-tbl tr th,
+    #view-all-form table tr td {
+        border: 1px solid black;
+        padding: 5px;
+        white-space: unset;
+        font-size: 12px;
+    }
+
+    .booking-item {
+        padding-left: 30px;
+    }
+
+    .modal-body .col-lg-4 i {
+        position: absolute;
+        left: 15px;
+    }
+
+    /*#customer_receipt*/
+    #customer_receipt {
+        position: static;
+    }
+
+    #customer_receipt table.view-driverdetail-tbl tr th,
+    #customer_receipt table tr td {
+        border: 1px solid black;
+        padding: 5px;
+        white-space: unset;
+        font-size: 12px;
+    }
+
+    #customer_receipt,
+    #customer_receipt * {
+        visibility: visible !important;
+        line-height: 1.19;
+    }
+
+    div#customer_receipt {
+        top: 0;
+    }
+    .add-vendor-payment-detail{
+        display: none;
+    }
+
+    .vendor-print-payment tbody tr td:first-child span.delete{
+        display: none;
+    }
+    table.vendor-print-payment-2 td input[type=number]{
+        border: none;
+    }
+}

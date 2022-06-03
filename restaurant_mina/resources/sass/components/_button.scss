@@ -1,0 +1,166 @@
+// $btn-width: 250px !default;
+// $btn-height: 80px !default;
+// $btn-full: $btn-height+$btn-width !default;
+// $btn-half: $btn-full/2 !default;
+// @mixin size($size) {
+//     height: $btn-height;
+//     width: $btn-width;
+//     ransition: 0.5s ease-in-out;
+// }
+// @keyframes criss-cross-left {
+//     0% {
+//         left: -20px;
+//     }
+//     50% {
+//         left: 50%;
+//         @include size(20px);
+//     }
+//     100% {
+//         left: 50%;
+//         @include size($btn-width*1.5);
+//     }
+// }
+// @keyframes criss-cross-right {
+//     0% {
+//         right: -20px;
+//     }
+//     50% {
+//         right: 50%;
+//         @include size(20px);
+//     }
+//     100% {
+//         right: 50%;
+//         @include size($btn-width*1.5);
+//     }
+// }
+@-webkit-keyframes criss-cross-left {
+    0% {
+        left: -20px;
+    }
+    50% {
+        left: 50%;
+        width: 20px;
+        height: 20px;
+    }
+    100% {
+        left: 50%;
+        width: 375px;
+        height: 375px;
+    }
+}
+
+@keyframes criss-cross-left {
+    0% {
+        left: -20px;
+    }
+    50% {
+        left: 50%;
+        width: 20px;
+        height: 20px;
+    }
+    100% {
+        left: 50%;
+        width: 375px;
+        height: 375px;
+    }
+}
+
+@-webkit-keyframes criss-cross-right {
+    0% {
+        right: -20px;
+    }
+    50% {
+        right: 50%;
+        width: 20px;
+        height: 20px;
+    }
+    100% {
+        right: 50%;
+        width: 375px;
+        height: 375px;
+    }
+}
+
+@keyframes criss-cross-right {
+    0% {
+        right: -20px;
+    }
+    50% {
+        right: 50%;
+        width: 20px;
+        height: 20px;
+    }
+    100% {
+        right: 50%;
+        width: 375px;
+        height: 375px;
+    }
+}
+
+.btn {
+    @include border-radius(4px);
+    @include transition(background 0.5s);
+    position: relative;
+    overflow: hidden;
+    // display: block;
+    padding: 8px 22px;
+    border: none;
+    z-index: 1;
+    &:before,
+    &:after {
+        position: absolute;
+        top: 50%;
+        content: '';
+        width: 20px;
+        height: 20px;
+        background-color: $black;
+        border-radius: 50%;
+        z-index: -1;
+    }
+    &:before {
+        left: -20px;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    &:after {
+        right: -20px;
+        -webkit-transform: translate(50%, -50%);
+        transform: translate(50%, -50%);
+    }
+    &--primary,
+    &.explore-btn,
+    &.btn-reservation-submit-btn,
+    &.btn-view-more,
+    &.show_more_menu {
+        background: $primary-color;
+        color: $white;
+        outline: none;
+        &:hover {
+            // background: rgba($primary-color, 0.8);
+            color: $white;
+            &:before {
+                -webkit-animation: criss-cross-left 0.8s both;
+                animation: criss-cross-left 0.8s both;
+                -webkit-animation-direction: alternate;
+                animation-direction: alternate;
+            }
+            &:after {
+                -webkit-animation: criss-cross-right 0.8s both;
+                animation: criss-cross-right 0.8s both;
+                -webkit-animation-direction: alternate;
+                animation-direction: alternate;
+            }
+        }
+    }
+}
+
+.show_more_menu {
+    &:before,
+    &:after {
+        background: $primary-color;
+    }
+}
+
+section#banner_section button.explore-btn {
+    @extend .btn;
+}

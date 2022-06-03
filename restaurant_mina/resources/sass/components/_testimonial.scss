@@ -1,0 +1,35 @@
+.testimonial {
+    text-align: center;
+    // border-top: 1px solid #eee;
+    // margin: 100px 0;
+    padding-bottom: 50px;
+    &__slider {
+        &__item {
+            .content {
+                @include font-size(20px);
+                // line-height: 28px;
+                color: #6e6e6e;
+                margin-bottom: 30px;
+                max-width: 900px;
+                margin: 0 auto 30px;
+                @include breakpoint (xs) {
+                    @include font-size(16px);
+                }
+            }
+            .dest_name {
+                h3 {
+                    @include font-size(18px);
+                    font-weight: 700;
+                    color: $black;
+                    span {
+                        display: block;
+                        color: rgba($black, 0.8);
+                        font-weight: 400;
+                        @include font-size(16px);
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

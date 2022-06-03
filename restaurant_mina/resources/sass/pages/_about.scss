@@ -1,0 +1,11 @@
+.menu__slider {
+    padding-bottom: 60px;
+    .slick-list {
+        @include breakpoint (md) {
+            padding-left: 0 !important;
+        }
+    }
+    &__item {
+        padding-right: 5px;
+    }
+}

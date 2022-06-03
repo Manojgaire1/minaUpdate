@@ -1,0 +1,25 @@
+    .form-wrapper {
+        // max-width: 800px;
+        margin: 0 auto;
+        label {
+            display: block;
+        }
+        .form-control {
+            background: #fafafa;
+            padding-left: 15px;
+            border: 1px solid #eee;
+            height: 50px;
+        }
+        select.form-control:not([size]):not([multiple]) {
+            height: 50px;
+        }
+        textarea {
+            &.form-control {
+                height: 100px;
+                box-shadow:none !important;
+            }
+        }
+        span.__form_required {
+            color: #d90b17;
+        }
+    }

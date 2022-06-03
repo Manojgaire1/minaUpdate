@@ -1,0 +1,23 @@
+$white: #ffffff;
+$primary-color: #d90b17;
+$dark-white: #F4F4F4;
+$dark-black: #000;
+$black: #000;
+$light-black-1: #6e6e6e;
+$light-black-2: #484848;
+$blue: #0084D4;
+$sky-blue: #20C1EA;
+$dark-blue: #172842;
+$heading-color: #000;
+$light-red: #E2687E;
+$light-green: #49C8D1;
+$slick-arrow: #E6E7E8;
+$box-border: #E6E7E8;
+$twitter-blue: #1B95E0;
+$table-border: #eee;
+$headings: h1 h2 h3 h4 h5 h6;
+@each $heading in $headings {
+    #{$heading} {
+        // font-family: "Gotham bold";
+    }
+}

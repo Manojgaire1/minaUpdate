@@ -1,0 +1,45 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+// .slick-slider {
+//     padding-bottom: 60px;
+//     .slick-arrow {
+//         height: 35px;
+//         width: 50px;
+//         border: none;
+//         outline: none;
+//         text-indent: -9999px;
+//         background: $slick-arrow;
+//         position: absolute;
+//         bottom: 0;
+//         @include transition(background 1s);
+//         &.slick-prev {
+//             background-image: url('../images/prev-arrow.svg');
+//             background-repeat: no-repeat;
+//             background-position: 50%;
+//             left: 45.5%;
+//             left: calc(50% - 52px);
+//             // calc(45.5% - 25px)
+//             // @include transform(translateX(50%));
+//             @include breakpoint (sm1) {
+//                 // left: calc(50% - 52px);
+//             }
+//         }
+//         &.slick-next {
+//             background-image: url('../images/next-arrow.svg');
+//             background-repeat: no-repeat;
+//             background-position: 50%;
+//             right: 45.5%;
+//             right: calc(50% - 52px);
+//             // calc(45.5% - 25px)
+//             @include breakpoint (sm1) {
+//                 // right: calc(50% - 52px);
+//             }
+//             // @include transform(translateX(50%));
+//         }
+//         // @include transition(background 1s);
+//         &:hover,
+//         &:focus {
+//             background-color: $light-green;
+//         }
+//     }
+// }

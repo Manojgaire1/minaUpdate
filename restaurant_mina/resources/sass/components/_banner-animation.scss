@@ -1,0 +1,27 @@
+.banner_section {
+    .slick-slide {
+        .slide_desc {
+            .title {
+                opacity: 0;
+                transition-property: opacity, transform;
+                transition-duration: 1s;
+                transition-timing-function: ease;
+                transform: translate3d(0, 100px, 0);
+            }
+            .btn {
+                opacity: 0;
+                transition-property: opacity, transform;
+                transition-duration: 1.5s;
+                transition-timing-function: ease;
+                transform: translate3d(0, 100px, 0);
+            }
+        }
+        &.slick-active {
+            .title,
+            .btn {
+                opacity: 1;
+                transform: translateZ(0);
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+#__mina_login_form{
+	background:#f5f5f5;
+	margin-bottom: -80px;
+}
+
+.__login_form_wrapper{
+	padding: 60px 0px 100px 0px;
+}
+
+.__login_form_wrapper h5{
+	padding: 25px 20px;
+    background: #eee;
+}
+
+
+.__login_form_wrapper .__login_details{
+	background:#fff;
+}
+
+.__login_details form{
+	padding: 15px 20px;
+}
+
+.__login_details form .form-control{
+	background: #fafafa;
+    padding-left: 15px;
+    border: 1px solid #eee;
+    height: 50px;
+}
+
+.__login_details a{
+	color: rgba(0,0,0,.7);
+	text-decoration:none;
+}
+
+.__login_details a:hover, .__login_details a:focus{
+	color:#d90b17;
+}

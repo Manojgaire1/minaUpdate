@@ -1,0 +1,292 @@
+.cart-page-section {
+    padding: 50px 0;
+}
+
+.cart-table {
+    .table {
+        margin-bottom: 0;
+        font-size: 14px;
+
+        @include breakpoint (sm) {
+            border: 1px solid $table-border;
+        }
+
+        thead {
+            @include breakpoint (xs) {
+                border: none;
+                clip: rect(0 0 0 0);
+                height: 1px;
+                margin: -1px;
+                overflow: hidden;
+                padding: 0;
+                position: absolute;
+                width: 1px;
+            }
+
+            th {
+                border-bottom: 1px solid $table-border;
+
+                @include breakpoint (sm) {
+                    border-right: 1px solid $table-border;
+                }
+            }
+        }
+        tfoot {
+            .row {
+                @include breakpoint (sm) {
+                    align-items: center;
+                }
+                @include breakpoint(xs) {
+                    margin: 0;
+                }
+                [class*='col'] {
+                    @include breakpoint(xs) {
+                        padding: 0;
+                    }
+                }
+            }
+            td {
+                &:before {
+                    display: none;
+                }
+                @include breakpoint (xs) {
+                    text-align: left;
+                }
+            }
+            label {
+                font-weight: 600;
+                @include breakpoint (md) {
+                    margin-bottom: 0;
+                }
+                @include breakpoint (xs) {
+                    // display: none;
+                }
+            }
+            select {
+                &.form-control {
+                    height: 35px;
+                    background-color: $white;
+                    @include border-radius (0);
+                    width: 190px;
+                    @include breakpoint (xs) {
+                        // margin-left: auto;
+                        // margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    tr {
+        @include breakpoint (xs) {
+            display: block;
+            margin-bottom: 20px;
+            border-left: 1px solid $table-border;
+            border-right: 1px solid $table-border;
+            border-bottom: 3px solid $table-border;
+        }
+
+        td {
+            .remove-icon {
+                width: 30px;
+                cursor: pointer;
+
+                @include breakpoint (xs) {
+                    margin-left: auto;
+                    margin-right: 0;
+                }
+            }
+
+            &:first-child {
+                @include breakpoint (xs) {
+                    // border-top: none;
+                }
+            }
+
+            @include breakpoint (xs) {
+                // border-bottom: 1px solid $table-border;
+                display: block;
+                font-size: 1.0em;
+                text-align: right;
+            }
+
+            @include breakpoint (sm) {
+                border-right: 1px solid $table-border;
+            }
+
+
+
+            &:before {
+                @include breakpoint(xs) {
+                    content: attr(data-label);
+                    float: left;
+                    // font-weight: bold;
+                    text-transform: uppercase;
+                    letter-spacing: 0.05rem;
+                }
+            }
+
+            &::after {
+                @include breakpoint(xs) {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+            }
+
+            .spicy-labels {
+                padding-left: 0;
+
+                .sp-quantity {
+                    width: 90px;
+
+                    @include breakpoint (xs) {
+                        margin-left: auto;
+                        margin-right: 0;
+                    }
+
+                    .input-qty,
+                    .quntity-input {
+                        height: 30px;
+                        width: 30px;
+                        line-height: 30px;
+                    }
+                }
+            }
+
+            .item_image {
+                width: 100px;
+
+                @include breakpoint (xs) {
+                    margin-left: auto;
+                    margin-right: 0;
+                }
+            }
+
+            .item_details {
+                .item_name {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+
+                .change-variation {
+                    .btn {
+                        background: $primary-color;
+                        font-size: 14px;
+                        padding: 8px 12px;
+                        @include border-radius (4px);
+                        line-height: 1;
+                        color: $white;
+
+                        &:hover {
+                            // background: $black;
+                        }
+                    }
+                }
+            }
+
+            .spicy-price {
+                font-size: 16px;
+                margin-bottom: 5px;
+            }
+
+            .inner-variation {
+                margin: 10px 0;
+
+                @include breakpoint (sm) {
+                    display: flex;
+                }
+                label {
+                    margin-right: 10px;
+                    color: #666;
+                }
+
+                .info {
+                    margin-left: 5px;
+                }
+
+                select.form-control {
+                    height: 30px;
+                    padding: 0 10px;
+
+                    @include breakpoint (xs) {
+                        margin-left: auto;
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            .item-price {
+                .price {
+                    font-size: 14px;
+                    color: #666;
+                }
+            }
+        }
+    }
+}
+
+.takeout {
+    margin-top: 50px;
+
+    @include breakpoint (xs) {
+        box-shadow: 0 0 5px rgba($color: $black, $alpha: 0.1);
+    }
+
+    @include breakpoint (sm) {
+        max-width: 400px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: 0;
+        box-shadow: 0 0 5px rgba($color: $black, $alpha: 0.1);
+    }
+
+    &__summary {
+        h4 {
+            background: #f9f9f9;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+            text-transform: capitalize;
+            margin: 0;
+        }
+
+        .total,
+        .grand-total,
+        .tax {
+            display: flex;
+
+            .left,
+            .right {
+                padding: 8px 12px;
+                width: 50%;
+                border-bottom: 1px solid $table-border;
+            }
+
+            .right {
+                text-align: right;
+                border-left: 1px solid $table-border;
+            }
+        }
+
+        .proceed_to_checkout_btn {
+            padding: 10px 15px;
+
+            .btn {
+                width: 100%;
+            }
+        }
+
+    }
+}
+
+.no-cart-added {
+    text-align: center;
+    .empty-cart-thumbnail {
+        margin-bottom: 30px;
+        img {
+            max-width: 170px;
+            
+        }
+    }
+}

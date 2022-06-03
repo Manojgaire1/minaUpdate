@@ -1,0 +1,57 @@
+#banner_section {
+    .slick-dots {
+        bottom: 20px;
+    }
+    .slick-slide {
+        img {
+            @include breakpoint (xs) {
+                height: 300px;
+                object-fit: cover;
+            }
+        }
+        .slide_desc {
+            @include breakpoint (xs) {
+                left: 0;
+                padding: 15px;
+                top: 50%;
+                bottom: 0;
+                transform: translateY(-50%);
+            }
+            @include breakpoint (sm) {
+                @include breakpoint (md1) {
+                    left: 0;
+                    padding: 15px;
+                    top: 50%;
+                    bottom: 0;
+                    transform: translateY(-50%);
+                }
+            }
+            p {
+                @include breakpoint (xs) {
+                    margin: 0;
+                    padding: 0;
+                    @include font-size(24px);
+                    line-height: 1.5;
+                }
+                @include breakpoint (sm) {
+                    @include breakpoint (md1) {
+                        margin-top: 0;
+                        padding: 0;
+                        @include font-size(28px);
+                        line-height: 1;
+                    }
+                }
+            }
+            .explore-btn {
+                @include breakpoint (xs) {
+                    margin-top: 20px;
+                    @include font-size(14px);
+                }
+            }
+        }
+    }
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
